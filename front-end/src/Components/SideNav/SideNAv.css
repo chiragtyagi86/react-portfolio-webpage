@@ -58,3 +58,7 @@
 .dis:hover{
     color: gray !important;
 }
+.active{
+    color: white !important;
+    cursor: pointer;
+}

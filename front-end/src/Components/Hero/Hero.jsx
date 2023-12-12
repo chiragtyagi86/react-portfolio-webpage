@@ -8,10 +8,11 @@ const Hero = () => {
     <div className='hero'>
       <div className="left-section">
       <span>HI THERE!</span>
-        <h1>I'M CHIRAG</h1>
-        <p className='pl'>full-stack devloper, ui-desianer</p>
-        <p className='ol'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iusto expedita perferendis neque dolor. At cum voluptatum, reprehenderit corporis ducimus eveniet provident? Dolores voluptatibus similique numquam, voluptate nemo quo a dicta excepturi facere inventore quisquam corporis obcaecati vero. Provident, dolorum cumque nostrum nisi veritatis magnam. </p>
-      <Link to="/about">  <button> More About me</button></Link>
+        <h1>I'M 
+        <span className='ip' >CHIRAG</span></h1>
+        <p className='pl'>full-stack devloper, ui-designer</p>
+        <p className='ol'>Welcome to my digital realm, where creativity meets functionality. As a versatile full-stack developer and UI designer, I craft seamless digital experiences. From robust back-end solutions to pixel-perfect interfaces, I bring your visions to life with a harmonious fusion of code and design. Explore the intersection of innovation and aesthetics on this journey through my portfolio of captivating projects. </p>
+      <Link to="/about"><button> More About me</button></Link>
       </div>
       <div className="right-section">
         <img src={home} alt="" />

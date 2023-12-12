@@ -1,38 +1,46 @@
 import React from 'react'
+
 import './SideNAv.css'
 import home from '../Assets/home.jpeg'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const SideNav = () => {
+
+ const navLinkstyles = ({isActive}) =>{
+    return {
+      color: isActive ? 'white' : 'black',
+      padding: isActive ? '50px' : '0px',
+    }
+ }
   return (
     <div className='sidenav'>
       <img src={home} alt="" />
       <ul>
         <li className='dot'></li>
             <hr />
-        <Link to='/' style={{textDecoration: "none", color: "black"}}>
+        <NavLink to='/' style={{textDecoration: "none", color: "black" ,navLinkstyles}} isActive >
            <li>HOME</li>
-          </Link>
+          </NavLink>
         <hr />
-        <Link to='/about' style={{textDecoration: "none", color: "black"}}>
-           <li>ABOUT ME</li>
-          </Link>
+        <NavLink to='/about' style={{textDecoration: "none", color: "black" ,navLinkstyles}} isActive >
+           <li className={({ isActive }) => "underline" + isActive ? " active" : ""} >ABOUT ME</li>
+          </NavLink>
         <hr />
-        <Link to='/resume' style={{textDecoration: "none", color: "black"}}>
-           <li>RESUME</li>
-          </Link>
+        <NavLink to='/resume' style={{textDecoration: "none", color: "black", navLinkstyles }}>
+           <li className={({ isActive }) => "underline" + isActive ? " active" : ""} >RESUME</li>
+          </NavLink>
         <hr />
-        <Link style={{textDecoration: "none", color: "black"}}>
+        <NavLink style={{textDecoration: "none", color: "black"}}>
            <li className='dis'>PORTFOLIO</li>
-          </Link>
+          </NavLink>
         <hr />
-        <Link style={{textDecoration: "none", color: "black"}}>
+        <NavLink style={{textDecoration: "none", color: "black"}}>
            <li className='dis'>TESTIMONIALS</li>
-          </Link>
+          </NavLink>
         <hr />
-        <Link to='/contact'style={{textDecoration: "none", color: "black"}}>
-           <li>CONTACT</li>
-          </Link>
+        <NavLink to='/contact'style={{textDecoration: "none", color: "black", navLinkstyles}}>
+           <li className={({ isActive }) => "underline" + isActive ? " active" : ""}> CONTACT</li>
+          </NavLink>
     <hr />
     <li className="dot"></li>
       </ul>
