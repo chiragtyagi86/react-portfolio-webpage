@@ -1,0 +1,60 @@
+.sidenav{
+    display: flex;
+    width: 20%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: rgb(255, 200,0);
+}
+.sidenav img{
+    width: 100%;
+    filter: grayscale(100%);
+    position: relative;
+    
+    top: 0;
+    margin-bottom: 42px;
+}
+
+.sidenav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sidenav ul li{
+    list-style: none;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    /* margin: 20px; */
+}
+.sidenav ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+.sidenav hr{
+    height: 30px;
+    border:  1px solid;
+    
+
+
+}
+.dot{
+    list-style: circle;
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 22px;
+}
+.sidenav ul li:active{
+    color: white;
+    cursor: pointer;
+}
+.dis{
+    color: gray;
+    cursor: help !important;
+}
+.dis:hover{
+    color: gray !important;
+}

@@ -1,0 +1,44 @@
+.resume{
+    margin-left: 450px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.resume h1{
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    border: 2px solid;
+}
+.resume h2{
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.resume h3{
+    background: rgb(255, 200, 0);
+    display: inline;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.grid{
+    display: grid;
+    align-items: center;
+    margin: 10px;
+    /* border: 2px solid; */
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    height: auto;
+}
+.grid-item{
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+.grid-item p{
+    margin: 20px;
+    font-size: 18px;
+}

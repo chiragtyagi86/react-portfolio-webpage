@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: rgb(255, 200, 0);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 200, 0);
+    height: 45vh;
+    margin-top: -800px;
+    border-radius: 22px;
+    margin-right: -1200px;
+    flex-direction: column;
+}
+
+.navbar ul li {
+    list-style: none;
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+
+
+}
+
+hr {
+    height: 10px;
+    border: dotted;
+
+}
+
+.navbar ul li:active {
+    color: white;
+}
+
+.navbar ul li :hover {
+    color: white;
+    cursor: pointer;
+    fill: white;
+}
+hr:hover{
+    color: white;
+}

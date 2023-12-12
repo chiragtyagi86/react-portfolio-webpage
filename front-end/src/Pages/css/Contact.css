@@ -1,0 +1,44 @@
+.contact {
+    margin-left: 450px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.contact h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 60px;
+    text-transform: uppercase;
+    border: 2px solid;
+}
+.contact h2{
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contact p{
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+
+}
+.icon{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid; */
+
+}
+.item{
+    margin: 10px;
+    /* border: 2px solid red; */
+}
+.item img{
+    width: 200px;
+}
